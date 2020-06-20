@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+  frps:
+    image: registry.cn-shenzhen.aliyuncs.com/nekoimi/frp:server
+    volumes:
+      - "./frps.ini:/frps.ini"
+    restart: always
+    privileged: true
+    network_mode: host
