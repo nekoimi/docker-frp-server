@@ -5,6 +5,7 @@ services:
     image: registry.cn-shenzhen.aliyuncs.com/nekoimi/frp:server
     volumes:
       - "./frps.ini:/frps.ini"
+      - "./404.html:/404.html"
     restart: always
     privileged: true
     network_mode: host
